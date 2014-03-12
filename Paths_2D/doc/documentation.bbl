@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{Appleton2005}
+Ben Appleton and Hugues Talbot.
+\newblock Efficient path openings and closings.
+\newblock In C.~Ronse, L.~Najman, and E.~Decenci\`ere, editors, {\em
+  Mathematical Morphology: 40 Years On}, volume~30 of {\em Computational
+  Imaging and Vision}, pages 33--42, Dordrecht, 2005. Springer-Verlag.
+
+\bibitem{Buckley2000}
+M.~Buckley and H.~Talbot.
+\newblock Flexible linear openings and closings.
+\newblock In L.~Vincent and D.~Bloomberg, editors, {\em Mathematical Morphology
+  and its application to image analysis}, pages 109--118, Palo Alto, June 2000.
+  ISMM, Kluwer.
+
+\bibitem{Heijmans2004}
+H.~Heijmans, M.~Buckley, and H.~Talbot.
+\newblock Path-based morphological openings.
+\newblock In {\em Proceedings of ICIP'04}, pages 3085--3088, Singapore, October
+  2004. IEEE.
+
+\bibitem{Heijmans2005}
+H.~Heijmans, M.~Buckley, and H.~Talbot.
+\newblock Path openings and closings.
+\newblock {\em Journal of Mathematical Imaging and Vision}, 22:107--119, 2005.
+
+\bibitem{Najman2008b}
+L.~Najman and H.~Talbot, editors.
+\newblock {\em Morphologie math\'ematique 1: approches d\'eterministes}.
+\newblock Lavoisier, Paris, 2008.
+\newblock ISBN 978-2746218413.
+
+\bibitem{serra82}
+J.~Serra.
+\newblock {\em Image Analysis and Mathematical Morphology}.
+\newblock Academic Press, 1982.
+
+\bibitem{serra88}
+J.~Serra.
+\newblock {\em Image Analysis and Mathematical Morphology - Volume II :
+  Theoretical Advances}.
+\newblock Academic Press, London, 1988.
+
+\bibitem{pierres_book03}
+P.~Soille.
+\newblock {\em Morphological Image Analysis, principles and applications}.
+\newblock Springer-Verlag, 2nd edition, 2003.
+\newblock ISBN 3-540-42988-3.
+
+\bibitem{Soille2001}
+P.~Soille and H.~Talbot.
+\newblock Directional morphological filtering.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  23(11):1313--1329, 2001.
+
+\bibitem{Talbot2007}
+H.~Talbot and B.~Appleton.
+\newblock Efficient complete and incomplete paths openings and closings.
+\newblock {\em Image and Vision Computing}, 25(4):416--425, April 2007.
+
+\end{thebibliography}
