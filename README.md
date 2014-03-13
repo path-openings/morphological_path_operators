@@ -8,15 +8,14 @@ which are non-linear filters useful in image analysis and image processing
 
 Created 2014-03-13
 
-
-Path operators are filters from mathematical morphology suitable for thin object 
-filtering, enhancement, detection and segmentation. Some examples are given
-in the repository.
+Path operators are filters from mathematical morphology suitable for the
+filtering, enhancement, detection and segmentation of thin objects. Some 
+examples are given in the repository.
 
 1- 2D path operators
 ====================
 
-This code was written in 2004 initially by Benjamin Appleton and Hugues Talbot, 
+This code was initially written in 2004 initially by Benjamin Appleton and Hugues Talbot, 
 while at CSIRO Mathematical and Imaging Sciences. Ben was a PhD student at 
 University of Queensland and Hugues was his advisor. 
 
@@ -27,7 +26,12 @@ It relies on the ImageMagick library for I/O.
 
 To be announced.
 
-3- Articles
-============
+3- Documentation
+================
 
-To be announced.
+Books, theses, articles and tutorials, to be announced.
+
+4- Misc
+======
+
+Python and Matlab bindings, tutorial code, applications. To be announced.
