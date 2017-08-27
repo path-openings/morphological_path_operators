@@ -67,7 +67,7 @@ BIMAGE *read_grayscale_image(const char *currentpath, const char * filename)
     int i, num_pixels;
 
     /* Various objects needed by ImageMagick */
-    ExceptionInfo *exception; // change for v7, was not a pointer before
+    ExceptionInfo exception;
     Image * image;
     ImageInfo * image_info;
     PixelPacket * pixel_packet;
@@ -77,9 +77,8 @@ BIMAGE *read_grayscale_image(const char *currentpath, const char * filename)
     MagickCoreGenesis(currentpath, MagickFalse);
 
     /* Initialise the ExceptionInfo - ImageMagick's way of implementing exceptions in C */
-    exception = AcquireExceptionInfo();
-    // No longer necessary with v7 GetExceptionInfo(exception);
-    
+    GetExceptionInfo(&exception);
+
     /* Construct an image_info object by 'cloning' a null image_info object */
     image_info = CloneImageInfo((ImageInfo *) NULL);
 
@@ -87,10 +86,10 @@ BIMAGE *read_grayscale_image(const char *currentpath, const char * filename)
     /* Set the name of the input file, which is stored in image_info */
     (void) strcpy(image_info->filename, filename);
     /* Actually read the image */
-    image = ReadImage(image_info, exception); // changes for v7, was &exception
+    image = ReadImage(image_info, &exception);
     /* Deal with exceptions (ie. drop out) */
-    if (exception->severity != UndefinedException)
-        CatchException(exception);
+    if (exception.severity != UndefinedException)
+        CatchException(&exception);
     if (image == (Image *) NULL)
         exit(1);
 
@@ -144,7 +143,7 @@ void write_grayscale_image(
     )
 {
     /* Various objects needed by ImageMagick */
-    ExceptionInfo *exception;
+    ExceptionInfo exception;
     Image * image;
     ImageInfo * image_info;
     PixelPacket * pixel_packet;
@@ -155,7 +154,7 @@ void write_grayscale_image(
     MagickCoreGenesis((char *)NULL, MagickFalse);
 
     /* Initialise the ExceptionInfo - ImageMagick's way of implementing exceptions in C */
-    exception = AcquireExceptionInfo(); // was GetExceptionInfo(&exception);
+    GetExceptionInfo(&exception);
 
     /* Construct an image_info object by 'cloning' a null image_info object */
     image_info = CloneImageInfo((ImageInfo *) NULL);
@@ -231,7 +230,7 @@ void write_colour_image(
     )
 {
     /* Various objects needed by ImageMagick */
-    ExceptionInfo *exception;
+    ExceptionInfo exception;
     Image * image;
     ImageInfo * image_info;
     PixelPacket * pixel_packet;
@@ -242,7 +241,7 @@ void write_colour_image(
     MagickCoreGenesis((char *)NULL, MagickFalse);
 
     /* Initialise the ExceptionInfo - ImageMagick's way of implementing exceptions in C */
-    exception = AcquireExceptionInfo(); // was v6 : GetExceptionInfo(&exception);
+    GetExceptionInfo(&exception);
 
     /* Construct an image_info object by 'cloning' a null image_info object */
     image_info = CloneImageInfo((ImageInfo *) NULL);

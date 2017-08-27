@@ -25,7 +25,7 @@ INCLUDE=ImageMagickIO.h   \
 COBJECTS = ${CSOURCE:.c=.o}
 CXXOBJECTS = ${CXXSOURCE:.cxx=.o}
 
-PREFIX=/opt/local
+PREFIX=/usr/local
 PKG_CONFIG_PATH=${PREFIX}/lib/pkgconfig
 
 MAGICFLAGS=`${PREFIX}/bin/MagickCore-config --cflags`

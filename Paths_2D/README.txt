@@ -3,7 +3,8 @@
 #
 # Hugues Talbot	25 May 2012
 # 
-# Latest version: Hugues Talbot 2013-03-13
+# Latest version: Hugues Talbot 07 August 2017
+#
 #
 
 The code in this release implements 2D path-based openings as described in the following article :

@@ -1,9 +1,14 @@
 #
 # Hugues Talbot 2013-03-13
 #
+#
 
 To compile this code, simply type 
 
 make
 
 in a Unix-like terminal. It *should* work including under Windows using either mingw32 or cygwin. Eventually a CMake config should be written...
+
+NEWS:
+
+	2017-08-07: this should now compile with ImageMagick version 7
