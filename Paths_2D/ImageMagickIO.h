@@ -44,7 +44,7 @@ knowledge of the CeCILL-B license and that you accept its terms.
 #ifndef IMAGEMAGICKIO_H
 #define IMAGEMAGICKIO_H
 
-#include <magick/api.h>
+#include <MagickCore/MagickCore.h>
 #include "pde_toolbox_bimage.h"
 
 /* Use dynamic (data-specific) constrast normalisation */
